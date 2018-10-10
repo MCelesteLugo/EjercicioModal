@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+</head>
+<body>
+
+    <div class="mockup">
+        <img src="img/MOCKUP2.png" alt="mockup">
+
+        <div class="button-container">
+            <div> <button class="mockup-rental" onclick="openRental()">Custom</button> </div>
+            <div> <button class="mockup-stream" onclick="openStream()">Custom</button> </div>
+        </div>
+
+    </div>
+    
+
+    <div id="modal-rental">
+        <div class="modal">
+        
+        <div class="header-modal">
+            <h1>Custom: Price for rental</h1>
+            <img src="img/round-clear-24px.png" alt="close">
+        </div>
+
+        <div class="content">
+            <div class="rental-zone">
+                <h2>Rental:</h2> 
+                <h3>All the world</h3>
+            </div>
+            
+            <div class="input">
+                <button class="desplegable" onclick="desplegarZona()">Zone <i class="fa fa-angle-down"></i></button>
+                <button class="desplegable" onclick="desplegarCountry()">Country <i class="fa fa-angle-down"></i></button>
+                <button class="rest">Rest of the world</button>
+
+                <div id="desplegable-zona">
+                    <button>All the world</button>
+                    <button>Africa</button>
+                    <button>America</button>
+                    <button>Asia</button>
+                    <button>Europa</button>
+                </div>
+
+                <div id="desplegable-country">
+                    <input type="text" name="" class="">
+                </div>
+
+            </div>
+
+            <p class="price-title">Custom price for rental</p>
+
+            <form action="">
+                <div class="custom-price">
+                    <div>
+                        <p>TIER 1</p>
+                        <input name="tier1" type="text" placeholder="&euro;0.99">
+                    </div>
+                    <div class="middle">
+                        <p>TIER 2</p>
+                        <input name="tier1" type="text" placeholder="&euro;1.99">
+                    </div>
+                    <div>
+                        <p>TIER 3</p>
+                        <input name="tier1" type="text" placeholder="&euro;2.99">
+                    </div>
+                </div>
+            
+                <input type="submit" class="save" value="save">
+            </form>
+        </div>
+
+        <div class="footer"> 
+                <!--Sección donde aparecen los precios customizados por territorio-->
+                <!-- <div><button class="paises">All the world</button> <button class="borrar-ingreso"><i class="fas fa-times"></i></button></div>
+                <div><button class="paises">All the world</button> <button class="borrar-ingreso"><i class="fas fa-times"></i></button></div>
+                <div><button class="paises">All the world</button> <button class="borrar-ingreso"><i class="fas fa-times"></i></button></div>
+                <div><button class="paises">All the world</button> <button class="borrar-ingreso"><i class="fas fa-times"></i></button></div>-->
+        </div>
+
+        </div>
+    </div>
+
+    <div id="modal-stream">
+            <div class="modal">
+            
+            <div class="header-modal">
+                <h1>Custom: Price for unlimited streaming</h1>
+                <img src="img/round-clear-24px.png" alt="close">
+            </div>
+    
+            <div class="content">
+                <div class="rental-zone">
+                    <h2>Rental:</h2> 
+                    <h3>All the world</h3>
+                </div>
+                
+                <div class="input">
+                    <button class="desplegable" onclick="desplegarZonaStream()">Zone <i class="fa fa-angle-down"></i></button>
+                    <button class="desplegable" onclick="desplegarCountryStream()">Country <i class="fa fa-angle-down"></i></button>
+                    <button class="rest">Rest of the world</button>
+    
+                    <div id="desplegable-zona-stream">
+                        <button>All the world</button>
+                        <button>Africa</button>
+                        <button>America</button>
+                        <button>Asia</button>
+                        <button>Europa</button>
+                    </div>
+    
+                    <div id="desplegable-country-stream">
+                        <input type="text" name="" class="">
+                    </div>
+    
+                </div>
+    
+                <p class="price-title">Custom: Price for unlimited streaming</p>
+    
+                <form action="">
+                    <div class="custom-price">
+                        <div>
+                            <p>TIER 1</p>
+                            <input name="tier1" type="text" placeholder="&euro;0.99">
+                        </div>
+                        <div class="middle">
+                            <p>TIER 2</p>
+                            <input name="tier1" type="text" placeholder="&euro;1.99">
+                        </div>
+                        <div>
+                            <p>TIER 3</p>
+                            <input name="tier1" type="text" placeholder="&euro;2.99">
+                        </div>
+                    </div>
+                
+                    <input type="submit" class="save" value="save">
+                </form>
+            </div>
+    
+            <div class="footer">
+                    <!-- <div><button class="paises">All the world</button> <button class="borrar-ingreso"><i class="fas fa-times"></i></button></div>
+                    <div><button class="paises">All the world</button> <button class="borrar-ingreso"><i class="fas fa-times"></i></button></div>
+                    <div><button class="paises">All the world</button> <button class="borrar-ingreso"><i class="fas fa-times"></i></button></div> -->
+            </div>
+    
+            </div>
+    </div>
+
+    <script src="js/scripts.js"></script>
+
+</body>
+</html>
